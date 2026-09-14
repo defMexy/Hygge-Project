@@ -32,6 +32,7 @@ p {
 }
 
 .kop,
+.kop-klein,
 .inhoud,
 .voet {
   width: 100%;
@@ -55,6 +56,23 @@ p {
   margin: 0;
   color: var(--grijs);
   font-size: 17px;
+}
+
+.kop-klein {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 28px;
+}
+
+.kop-klein h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.terug {
+  color: var(--zwart);
+  font-size: 15px;
 }
 
 .beeld {
@@ -154,6 +172,70 @@ p {
   border-top: 1px solid var(--zwart);
   color: var(--grijs);
   font-size: 13px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid var(--zwart);
+}
+
+.beeld-vak {
+  width: 72px;
+  height: 72px;
+}
+
+.product h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.product-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.prijs {
+  margin: 0;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.product-omschrijving {
+  margin: 6px 0 0 0;
+  font-size: 15px;
+}
+
+.product-allergenen {
+  margin: 4px 0 0 0;
+  color: var(--grijs);
+  font-size: 13px;
+}
+
+.teller {
+  grid-column: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.tel-knop {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--zwart);
+  background-color: var(--wit);
+  color: var(--zwart);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tel-getal {
+  min-width: 28px;
+  text-align: center;
 }
 
 @media (min-width: 700px) {
